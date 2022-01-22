@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:wght@300&family=The+Nautigal:wght@700&display=swap');
+
+/* font-family: 'Leckerli One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'The Nautigal', cursive; */
+
+/* ======================== BASIC STYLING ============================= */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+
+    --bgcolor: #f1f5fd;
+    --input-background: #f1f1f1;
+    --input-focus-background: #ddd;
+    --primary-color: #6f5de7;
+    --text-color: #828286;
+    --main-text-color: #333333;
+    --btn-color: #04AA6D;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+}
+
+.main-heading {
+    color: var(--main-text-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 3rem 0 0.5rem 0;
+}
+
+hr {
+    border: 1px solid;
+}
+
+.card-container {
+    padding: 4rem 0;
+}
+
+.card-title {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: var(--main-text-color) !important;
+    text-transform: uppercase;
+}
+
+.card-text {
+    color: var(--main-text-color) !important;
+    font-weight: bold !important;
+    font-size: 1.1rem;
+}
+
+.card-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--btn-color);
+}
+
+.msgs {
+    color: var(--main-text-color);
+    font-size: 1rem;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.card-btn {
+    border: none !important;
+    outline: none !important;
+    text-transform: uppercase;
+    padding: 0rem 1rem !important;
+    font-weight: bold !important;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.card-btn:hover {
+    opacity: 0.8 !important;
+}
+
+.card-priceAndBtn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 100% !important;
+}
+
+.button-div {
+    padding: 2rem 0 3rem 0;
+
+}
+
+.all-btns {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.btns {
+    padding: 0.5rem 1rem !important;
+    text-transform: uppercase;
+    font-size: 1.4rem !important;
+    font-weight: bold !important;
+    border: none !important;
+    outline: none !important;
+
+}
+
+button:hover {
+    color: white !important;
+    background-color: var(--main-text-color) !important;
 }
